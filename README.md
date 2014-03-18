@@ -10,6 +10,7 @@ The Merkle-Hellman system is based on the subset sum problem (a special case of 
 
 
 The 3 Stages-
+
 Key generation
 
 The keys are knapsacks.
