@@ -1,5 +1,5 @@
 The maths behind the cryptosystem.
-==================================
+====================================
 
 
 1. First, a superincreasing sequence w is created. This is the basis for a private key. From this, calculate the sum.
