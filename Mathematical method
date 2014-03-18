@@ -1,0 +1,14 @@
+The Maths behind the cryptosystem.
+==================================
+
+Key generation
+ To encrypt n-bit messages, choose a superincreasing sequence w = (w1, w2, ..., wn)
+of n nonzero natural numbers. Pick a random integer q, such that q>\sum_{i = 1}^n w_i,
+ Pick a random integer, r, such that gcd(r,q) = 1
+ q is chosen this way to ensure the uniqueness of the ciphertext. If it is any smaller, more
+than one plaintext may encrypt to the same ciphertext.
+ r must be coprime to q or else it will not have an inverse mod q. The existence of the inverse
+of r is necessary so that decryption is possible.
+ Now calculate the sequence β = (β1, β2, ..., βn)
+Where βi = rwi mod q.
+ The public key is β, while the private key is (w, q, r).
